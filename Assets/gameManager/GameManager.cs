@@ -13,8 +13,6 @@ public class GameManager : MonoBehaviour{
 	// Building management.
 	public List<GameObject> buildingTypes;
 
-
-
 	// Camera options.
 	public int maxZoom;
 	public int minZoom;
@@ -47,7 +45,6 @@ public class GameManager : MonoBehaviour{
 		}
 			
 		dropDownBuildings.GetComponent<Dropdown> ().AddOptions(options);
-	
 	}
 
 	public void SetSelection () 
@@ -73,12 +70,12 @@ public class GameManager : MonoBehaviour{
 	{	
 		var start = -1 * mapSize / 2 + 0.5f;
 		var end = mapSize / 2 - 0.5f;
-		if (Input.anyKey) {
+		if (isBuilding) {
 			GL.PushMatrix();
 			GL.LoadOrtho();
 			GL.Begin (GL.LINES);
 
-			GL.Color (Color.red);
+			GL.Color (Color.green);
 			for (float i = start; i <= end; i++) {
 				GL.Vertex3(start, -.5f, i);
 				GL.Vertex3(end, -.5f, i);

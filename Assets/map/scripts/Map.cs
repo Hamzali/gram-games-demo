@@ -18,18 +18,5 @@ public class Map : MonoBehaviour {
 	{
 		
 	}
-		
-	#region Building Managements
-	void Built (GameObject building) 
-	{
-		
-	}
-		
-	void Demolish (GameObject building)
-	{
-		
-	}
-	#endregion
-
 
 }

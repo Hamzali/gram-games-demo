@@ -17,23 +17,7 @@ public class Building : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		onBuilding ();
+		
 	}
 
-	void onBuilding () 
-	{
-		if (Input.GetKeyDown (KeyCode.UpArrow)) 
-		{
-			transform.position += new Vector3 (1, 0, 0);
-		} else if (Input.GetKeyDown (KeyCode.DownArrow)) 
-		{
-			transform.position += new Vector3 (-1, 0, 0);
-		} else if (Input.GetKeyDown (KeyCode.LeftArrow)) 
-		{
-			transform.position += new Vector3 (0, 0, 1);
-		} else if (Input.GetKeyDown (KeyCode.RightArrow)) 
-		{
-			transform.position += new Vector3 (0, 0, -1);
-		}  
-	}
 }
